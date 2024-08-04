@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 img {
@@ -90,7 +91,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 70%;
   height: 100%;
   background-color: var(--gray);
   z-index: 5;
@@ -281,6 +282,100 @@ header {
   }
 }
 
+/* === About === */
+#about {
+  padding-top: 10em;
+  padding-bottom: 8em;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#about h2 {
+  text-align: center;
+  color: var(--gray);
+}
+
+.about-me{
+  font-style: normal;
+  font-weight: 80;
+  line-height: 2rem;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.cat__pic{
+  margin-top: 10px;
+  object-fit: cover;
+  width: 250px;
+  height: 290px;
+  border-radius: 100%;
+}
+
+/* .my__cats{
+  display: flex;
+  flex-direction: column;#skills {
+      padding-top: 10em;
+      position: relative;
+      overflow-x: hidden;
+    }
+  
+    #skills h2 {
+      text-align: center;
+      color: var(--gray);
+    
+} */
+
+/* .each__cat{
+  display: flex;
+  flex-direction: row;
+}
+
+.each__cat img{
+  width: 60px;
+  height: 60px;
+} */
+
+span{
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+
+/* === Skills === */
+.skills__img{
+  display: flex;
+}
+
+#skills {
+  padding-top: 10em;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#skills h2{
+  text-align: center;
+  color: var(--gray);
+}
+.skills{
+  border: 1px solid var(--green);
+  width: 500px;
+  height: 220px; 
+  text-align: center;
+  border-radius: 10px;
+  margin: 80px 15px;
+  box-shadow: inset 0 0 10px 2px var(--green);
+}
+
+.skills h2{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.skills p{
+  margin: 10px 0;
+  line-height: 2rem;
+}
 /* === Things === */
 #things {
   position: relative;
@@ -368,19 +463,19 @@ header {
   }
 }
 
-/* === Works === */
-#works {
+/* === projects === */
+#projects {
   padding-top: 10em;
   position: relative;
   overflow-x: hidden;
 }
 
-#works h2 {
+#projects h2 {
   text-align: center;
   color: var(--gray);
 }
 
-.works__dec {
+.projects__dec {
   position: absolute;
   top: 0;
   left: 0;
@@ -388,7 +483,7 @@ header {
   z-index: -1;
 }
 
-.works__dec:nth-child(2) {
+.projects__dec:nth-child(2) {
   position: absolute;
   top: initial;
   left: initial;
@@ -398,44 +493,44 @@ header {
   z-index: -1;
 }
 
-.works__img--single {
+.projects__img--single {
   margin: 2em 0;
 }
 
-.works__img--single:nth-child(odd) {
-  padding-top: 5em;
+.projects__img--single:nth-child(odd) {
+  /* padding-top: 5em; */
 }
 
-.works__img--single:nth-child(3) {
+.projects__img--single:nth-child(3) {
   margin-top: -5em;
 }
 
-.works__btn {
+.projects__btn {
   text-align: center;
   margin-top: 8em;
 }
 
-.works__btn button {
+.projects__btn button {
   font-size: 1rem;
 }
 
 @media (min-width: 62em) {
-  #works h2 {
+  #projects h2 {
     margin-bottom: 3em;
   }
 
-  .works__img {
+  .projects__img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .works__img--single {
-    margin: 0 5em;
+  .projects__img--single {
+    margin: 2em;
     width: 35%;
   }
 
-  .works__img--single:nth-child(3) {
+  .projects__img--single:nth-child(3) {
     margin-top: 0;
   }
 }
@@ -458,21 +553,56 @@ header {
 }
 
 .footer__heading {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 300px;
+  transform: translateY(-30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: var(--gray);
 }
 
+.footer__heading p{
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 100;
+}
+
 .footer__contact {
-  margin-top: 2em;
+  width: 150px;
+  margin-bottom: 2em;
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 .footer__contact a {
   text-decoration: none;
   color: var(--gray);
+}
+
+.footer__contact a:hover {
+  text-decoration: none;
+  transform: translateY(-20%);
+  color: var(--green-l);
+}
+
+.my__resume a{
+  border: 3px solid var(--gray);
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.my__resume a:hover{
+  background-color: var(--green-l);
+  border: none;
+  color: white;
+  transition: var(--smooth);
 }
 
 .footer__dec {
@@ -493,12 +623,19 @@ header {
   }
 
   .footer__heading {
-    text-align: initial;
-    margin: 0;
+    transform: translateY(-32%);
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gray);
   }
 
-  .footer__contact {
-    display: flex;
-    justify-content: space-between;
+  .footer__heading p {
+    width: 550px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 100;
+    margin: 40px 0;
   }
 }
