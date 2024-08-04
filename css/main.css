@@ -20,6 +20,11 @@ img {
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: var(--green);
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -495,14 +500,13 @@ span{
 
 .projects__img--single {
   margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.projects__img--single:nth-child(odd) {
-  /* padding-top: 5em; */
-}
-
-.projects__img--single:nth-child(3) {
-  margin-top: -5em;
+.projects__img--single:hover{
+  opacity: 0.5;
 }
 
 .projects__btn {
