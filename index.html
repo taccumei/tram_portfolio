@@ -131,13 +131,10 @@
       <!-- img -->
       <div class="projects__img">
         <div class="projects__img--single">
-          <a href="https://lacavietnam-reactjs.onrender.com/" target="_blank"><img src="./img/lacavietnam-project.png" alt="bag" style="width: 450px; height: 280px; cursor: pointer;"/></a>
+          <a href="#lacavietnam"><img src="./img/lacavietnam-project.png" alt="bag" style="width: 450px; height: 280px; cursor: pointer;"/></a>
         </div>
         <div class="projects__img--single">
-          <a href="https://lacavietnam-reactjs.onrender.com/" target="_blank"><img src="./img/pomodoro.png" alt="plate" style="width: 450px; height: 280px;"/></a>
-        </div>
-        <div class="projects__img--single">
-          <a href="https://lacavietnam-reactjs.onrender.com/" target="_blank"><img src="./img/labeaute.png" alt="women" style="width: 450px; height: 280px;"/></a>
+          <a href="#pomodoro"><img src="./img/pomodoro.png" alt="plate" style="width: 450px; height: 280px;"/></a>
         </div>
       </div>
     </div>
@@ -155,49 +152,71 @@
       </div>
       <!-- heading -->
       <h2>Things I do</h2>
-      <!-- item 1 -->
-      <div class="things__item">
+      <!-- project 1 -->
+      <div class="things__item" id="lacavietnam">
         <!-- img -->
-        <img src="./img/lacavietnam-project.png" alt="illustration of women">
-
+        <div class="things__item--description">
+          <img src="./img/lacavietnam-project.png" alt="illustration of lacavietnam project"/>
+          <div class="things__item--summary">
+            <h3>Lacavietnam</h3>
+            <p>Summary: Lacavietnam is a responsive website for a local restaurant. The website will provide essential information about the
+              restaurant, including its menu, location, and contact details, and allow users to make
+              online orders.</p>
+            <h3>Techologies: </h3>         
+            <p>ReactJS,Nodejs,ExpressJS,Mongodb,Paypal Integration,Mailgun for email features,</p>
+          </div>
+        </div>
+        
         <!-- text -->
         <div class="things__item--heading">
-          <h3>Summary</h3>
-          <p>Lacavietnam is a responsive website for a local restaurant. The website will provide essential information about the restaurant, including its menu, location, and contact details, and allow users to make
-          online orders. The design will ensure an optimal viewing experience across a wide range of devices, from mobile
-          phones to desktop computers.</p>
-          <h3>Techologies: </h3>
-          <p>ReactJS,Nodejs,ExpressJS,Mongodb,Paypal Integration,Mailgun for email features,</p>
-          <a href="https://github.com/taccumei/lacavietnam-reactjs" target="_blank"><i class="fa-brands fa-github"></i>
-          </a>
+          <h3>Why is this project</h3>
+          <p>
+            Since I am an entry-level full stack web developer, this project can serve as a practical application of my skills, helping me gain experience and build a portfolio that showcases my abilities to potential employers or clients.
+            By aligning this project with my passion for Vietnamese food, I can contribute to the promotion and appreciation of Vietnamese culinary heritage.
+          </p>
+          <h3>What I have learned?</h3>
+          <ul>
+            <li>Integrate PayPal to handle secure online payments, providing customers with a trusted and convenient payment option.</li>
+            <li>Integrate Mailgun to send confirmation emails directly from the application.</li>
+          </ul>
+          <div class="things__item--button">
+            <a href="https://lacavietnam-reactjs.onrender.com/" target="_blank">Visit Lacavietnam</a>
+            <a href="https://github.com/taccumei/lacavietnam-reactjs" target="_blank"><i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
+      <hr>
       <!-- item 2 -->
-
-      <div class="things__item">
+      <div class="things__item" id="pomodoro">
         <!-- img -->
-        <img src="./img/pomodoro.png" alt="illustration of women">
-
+        <div class="things__item--description">
+          <img src="./img/pomodoro.png" alt="illustration of lacavietnam project" />
+          <div class="things__item--summary">
+            <h3>Pomodoro</h3>
+            <p>Summary: Design a user-friendly, reliable, and customizable Pomodoro timer that enhances productivity through structured work and break intervals. The design will ensure an optimal viewing experience across a wide range of devices, from mobile
+              phones to desktop computers.</p>
+            <h3>Techologies: </h3>
+            <p>HTML, CSS, JS</p>
+          </div>
+        </div>
         <!-- text -->
         <div class="things__item--heading">
-          <h3>Pomodoro</h3>
-          <p>Summary: Lacavietnam is a responsive website for a local restaurant. The website will provide essential information about the restaurant, including its menu, location, and contact details, and allow users to make
-          online orders. The design will ensure an optimal viewing experience across a wide range of devices, from mobile
-          phones to desktop computers.</p>
+          <h3>Why is this project</h3>
+          <p>
+            I find the Pomodoro Method quite useful for studying. It helps me stay focused and productive by breaking my study time into short, manageable intervals with regular breaks. This approach prevents burnout and keeps me motivated throughout my study sessions. That's why I want to build a pomodoro timer app for my daily study routine.
+          </p>
+          <h3>What I have learned?</h3>
+          <ul>
+            <li>Learn how to create a functional and visually appealing web application by integrating structure, design, and interactivity.</li>
+            <li>Experience in handling programming logic and user interface design.</li>
+          </ul>
+          <div class="things__item--button">
+            <a href="https://taccumei.github.io/tomato-timer/" target="_blank">Visit Pomodoro</a>
+            <a href="https://github.com/taccumei/tomato-timer" target="_blank"><i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- item 3 -->
-      <div class="things__item">
-        <!-- img -->
-        <img src="./img/labeaute.png" alt="illustration of women">
-        <!-- text -->
-        <div class="things__item--heading">
-          <h3>Labeaute</h3>
-          Summary: Lacavietnam is a responsive website for a local restaurant. The website will provide essential information about the restaurant, including its menu, location, and contact details, and allow users to make
-          online orders. The design will ensure an optimal viewing experience across a wide range of devices, from mobile
-          phones to desktop computers.</h3>
-        </div>
-      </div>
   </section>
 
   <!-- footer -->
@@ -243,3 +262,76 @@
   <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- #things {
+position: relative;
+overflow-x: hidden;
+margin-top: 15em;
+}
+
+#things h2 {
+text-align: center;
+color: var(--gray);
+margin-bottom: 3em;
+}
+
+.things__dec {
+position: absolute;
+top: 0;
+left: 0;
+transform: translateX(-60%);
+z-index: -1;
+}
+
+.things__dec:nth-child(2) {
+top: initial;
+left: initial;
+bottom: 15%;
+right: 0;
+transform: translateX(60%);
+z-index: -1;
+}
+
+.things__item {
+margin: 3em 0;
+}
+
+.things__item img {
+padding-bottom: 4em;
+margin-top: 0;
+}
+
+.
+
+.things__item--heading, .things__item--summary {
+text-align: center;
+color: var(--gray);
+}
+
+.things__item--heading a {
+text-decoration: none;
+color: var(--gray);
+background-color: var(--green-l);
+padding: 10px 30px;
+}
+
+.things__item--button{
+margin-top: 50px;
+}
+
+.things__item--heading p, .things__item--heading li, .things__item--summary{
+font-weight: 300;
+line-height: 2em;
+max-width: 500px;
+margin: 0 auto;
+padding-top: 1em;
+padding-bottom: 2em;
+text-align: justify;
+}
+
+.things__item--summary h3{
+margin: 20px 0;
+} -->

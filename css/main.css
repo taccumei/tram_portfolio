@@ -20,11 +20,6 @@ img {
   width: 100%;
 }
 
-a{
-  text-decoration: none;
-  color: var(--green);
-}
-
 .container {
   max-width: 1200px;
   width: 100%;
@@ -348,7 +343,7 @@ span{
 
 
 /* === Skills === */
-.skills__img{
+.skills__img {
   display: flex;
 }
 
@@ -358,28 +353,66 @@ span{
   overflow-x: hidden;
 }
 
-#skills h2{
+#skills h2 {
   text-align: center;
   color: var(--gray);
 }
-.skills{
+
+.skills {
   border: 1px solid var(--green);
   width: 500px;
-  height: 220px; 
+  min-height: 320px;
   text-align: center;
   border-radius: 10px;
   margin: 80px 15px;
   box-shadow: inset 0 0 10px 2px var(--green);
 }
 
-.skills h2{
+.skills h2 {
   text-align: center;
   padding: 20px 0;
 }
 
-.skills p{
+.skills p {
   margin: 10px 0;
   line-height: 2rem;
+}
+
+@media (min-width: 62em) {
+.skills__img {
+    display: flex;
+  }
+
+  #skills {
+    padding-top: 10em;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #skills h2 {
+    text-align: center;
+    color: var(--gray);
+  }
+
+  .skills {
+    border: 1px solid var(--green);
+    width: 500px;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 80px 15px;
+    box-shadow: inset 0 0 10px 2px var(--green);
+  }
+
+  .skills h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .skills p {
+    margin: 10px 0;
+    line-height: 2rem;
+  }
 }
 /* === Things === */
 #things {
@@ -417,55 +450,124 @@ span{
 
 .things__item img {
   padding-bottom: 4em;
+  margin-top: 0;
 }
 
-.things__item--heading {
+.things__item--description {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  justify-self: center;
+  align-items: center;
+}
+
+.things__item--heading,
+.things__item--summary h3{
   text-align: center;
   color: var(--gray);
 }
 
-.things__item--heading p {
+.things__item--heading a {
+  text-decoration: none;
+  color: var(--gray);
+  background-color: var(--green-l);
+  padding: 10px 30px;
+}
+
+.things__item--button{
+  margin-top: 50px;
+}
+.things__item--heading{
+  margin-top: 20px;
+}
+
+.things__item--heading p,
+.things__item--heading li,
+.things__item--summary {
   font-weight: 300;
   line-height: 2em;
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
   padding-top: 1em;
+  text-align: justify;
+}
+.things__item--summary h3 {
+  margin: 20px 0;
+  color: var(--gray);
+}
+.things__item--summary p{
+  color: var(--gray);
 }
 
 @media (min-width: 62em) {
+  hr{
+    border: 1px solid var(--green-l);
+  }
   .things__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0;
   }
 
-  .things__item img {
-    width: 40%;
-    padding-bottom: 0;
+  .things__item--description {
+    width: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    justify-self: start;
+    align-items: start;
+  }
+
+  .things__item--description img {
+    margin-left: 50px;
+    width: 75%;
+  }
+  
+  .things__item--summary{
+    padding: 0 50px 0 0;
+    text-align: justify;
+  }
+
+  .things__item--heading p{
+    font-weight: 300;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  h3{
+    margin: 20px 0;
+    color: var(--gray);
   }
 
   .things__item--heading {
-    width: 45%;
-    text-align: initial;
+    text-align: justify;
   }
 
+  .things__item--heading ul{
+    margin: 0;
+    padding: 0;
+  }
+  .things__item--heading li{
+    list-style-type: circle;
+    line-height: 2rem;
+    font-weight: 100;
+  }
   .things__item--heading p {
     max-width: 500px;
     margin: 0;
   }
-
+/* 
   .things__item:nth-child(odd) img {
-    order: 2;
-    width: 40%;
-    padding-bottom: 0;
-  }
-
-  .things__item--heading:nth-child(odd) {
     order: 1;
-    width: 45%;
+    width: 80%;
+    padding-bottom: 0;
+  } */
+
+  /* .things__item--heading:nth-child(odd) {
+    order: 2;
+    width: 80%;
     text-align: initial;
-  }
+  } */
 }
 
 /* === projects === */
@@ -504,6 +606,13 @@ span{
   align-items: center;
   justify-content: center;
 }
+
+/* .projects__img--single a{
+  text-decoration: none;
+  color: var(--gray);
+  background-color: var(--green-l);
+  padding: 10px 30px;
+} */
 
 .projects__img--single:hover{
   opacity: 0.5;
