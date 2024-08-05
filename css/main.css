@@ -311,30 +311,6 @@ header {
   border-radius: 100%;
 }
 
-/* .my__cats{
-  display: flex;
-  flex-direction: column;#skills {
-      padding-top: 10em;
-      position: relative;
-      overflow-x: hidden;
-    }
-  
-    #skills h2 {
-      text-align: center;
-      color: var(--gray);
-    
-} */
-
-/* .each__cat{
-  display: flex;
-  flex-direction: row;
-}
-
-.each__cat img{
-  width: 60px;
-  height: 60px;
-} */
-
 span{
   font-weight: bold;
   font-style: italic;
@@ -606,13 +582,6 @@ span{
   align-items: center;
   justify-content: center;
 }
-
-/* .projects__img--single a{
-  text-decoration: none;
-  color: var(--gray);
-  background-color: var(--green-l);
-  padding: 10px 30px;
-} */
 
 .projects__img--single:hover{
   opacity: 0.5;
