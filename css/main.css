@@ -296,6 +296,7 @@ header {
 }
 
 .about-me{
+  padding: 0 50px;
   font-style: normal;
   font-weight: 80;
   line-height: 2rem;
@@ -321,10 +322,12 @@ span{
 /* === Skills === */
 .skills__img {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #skills {
-  padding-top: 10em;
+  /* padding-top: 10em; */
   position: relative;
   overflow-x: hidden;
 }
@@ -336,11 +339,11 @@ span{
 
 .skills {
   border: 1px solid var(--green);
-  width: 500px;
-  min-height: 320px;
+  width: 260px;
+  min-height: 120px;
   text-align: center;
   border-radius: 10px;
-  margin: 80px 15px;
+  margin: 20px 15px;
   box-shadow: inset 0 0 10px 2px var(--green);
 }
 
@@ -357,6 +360,7 @@ span{
 @media (min-width: 62em) {
 .skills__img {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   #skills {
@@ -422,6 +426,14 @@ span{
 
 .things__item {
   margin: 3em 0;
+}
+
+.things__item p{
+  padding: 0 50px
+}
+
+.things__item ul{
+  padding: 0 50px
 }
 
 .things__item img {
@@ -635,10 +647,11 @@ span{
 }
 
 .footer__heading {
-  max-width: 300px;
-  transform: translateY(-30%);
+  /* max-width: 300px; */
+  /* transform: translateY(-30%); */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--gray);
@@ -648,7 +661,7 @@ span{
   width: 200px;
   margin-top: 20px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .footer__contact {
